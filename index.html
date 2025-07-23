@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Water</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <a href="#main" class="skip-link">Skip to Main Content</a>
 
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
       <img src="yoyo.jpg" alt="Logo" />
-       <a href="./page1.html"><h2>Visit Water Page !</h2></a>
-      <a href="./page2.html"><h2>Visit Wet Page !</h2></a>
+      <a href="page1.html"><h2>Visit Water Page !</h2></a>
+      <a href="page2.html"><h2>Visit Wet Page !</h2></a>
     </nav>
 
     <main id="main">
@@ -26,7 +26,7 @@
         <li>Pineapple</li>
       </ol>
 
-      <p>Water is pretty refreshing can be cool for ice tea or hot for coffee</p>
+      <p>Water is pretty refreshing, can be cool for iced tea or hot for coffee. </p>
 
       <div class="grid">
         <img src="download (2).jpeg" alt="pretty Water" />
@@ -39,10 +39,20 @@
       <p>
         <a href="https://www.britannica.com/science/water" target="_blank">Water Link</a>
       </p>
+
+      <section aria-label="Image Carousel" style="text-align:center;">
+        <h2>Water Gallery</h2>
+        <img id="carousel" src="download (2).jpeg" alt="Carousel image of water" style="width:300px; height:auto; border-radius:10px;">
+        <br>
+        <button onclick="prevImage()">Previous</button>
+        <button onclick="nextImage()">Next</button>
+      </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo" aria-label="Site footer">
       <p>RKJ Water</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
